@@ -1,0 +1,1 @@
+{"version":3,"file":"connection.mock.js","sourceRoot":"","sources":["../../../../src/common/utils/mocks/connection.mock.ts"],"names":[],"mappings":";;;AAEA,MAAM,EAAE,GAAG;IACT,OAAO,EAAE,EAAE;CACG,CAAC;AAEjB,MAAa,cAAc;IACzB,iBAAiB,CAAC,IAA0B;QAC1C,OAAO,EAAE,CAAC;IACZ,CAAC;CACF;AAJD,wCAIC"}
