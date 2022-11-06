@@ -8,8 +8,10 @@ export class MicroSampleEntity extends BaseEntity {
   @Column()
   username: string;
 
-  @Column()
-  image?: string;
+  @Column({
+    type: 'bytea',
+  })
+  image?: Uint8Array;
 
   @Column({ nullable: true })
   sample_qty?: string;
@@ -20,7 +22,7 @@ export class MicroSampleEntity extends BaseEntity {
   @UpdateDateColumn()
   updated_at: Date;
 
-  constructor(username: string, image: string, sample_qty: string) {
+  constructor(username: string, image: Uint8Array, sample_qty: string) {
     super();
 
     this.username = username;
