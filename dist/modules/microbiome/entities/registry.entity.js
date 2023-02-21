@@ -28,8 +28,10 @@ __decorate([
     __metadata("design:type", String)
 ], MicroSampleEntity.prototype, "username", void 0);
 __decorate([
-    (0, typeorm_1.Column)({ type: 'longblob' }),
-    __metadata("design:type", Buffer)
+    (0, typeorm_1.Column)({
+        type: 'bytea',
+    }),
+    __metadata("design:type", Uint8Array)
 ], MicroSampleEntity.prototype, "image", void 0);
 __decorate([
     (0, typeorm_1.Column)({ nullable: true }),
@@ -45,7 +47,7 @@ __decorate([
 ], MicroSampleEntity.prototype, "updated_at", void 0);
 MicroSampleEntity = __decorate([
     (0, typeorm_1.Entity)({ name: "micro_samples" }),
-    __metadata("design:paramtypes", [String, Buffer, String])
+    __metadata("design:paramtypes", [String, Uint8Array, String])
 ], MicroSampleEntity);
 exports.MicroSampleEntity = MicroSampleEntity;
 //# sourceMappingURL=registry.entity.js.map

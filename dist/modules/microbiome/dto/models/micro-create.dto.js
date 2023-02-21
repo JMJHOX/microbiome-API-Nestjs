@@ -19,7 +19,7 @@ __decorate([
 ], RegistryCreateDto.prototype, "username", void 0);
 __decorate([
     (0, swagger_1.ApiProperty)({ description: "User pin code" }),
-    __metadata("design:type", Buffer)
+    __metadata("design:type", Uint8Array)
 ], RegistryCreateDto.prototype, "image", void 0);
 __decorate([
     (0, swagger_1.ApiProperty)({ description: "rol user´s" }),

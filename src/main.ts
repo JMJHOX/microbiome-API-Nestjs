@@ -87,7 +87,7 @@ async function bootstrap(): Promise<void> {
   );
   app.use(compression());
   app.use(express.json({ limit: '50mb' }));
-  app.use(express.urlencoded({limit :'50mb', extended: true }));
+  app.use(express.urlencoded({limit :'50mb', extended: true ,parameterLimit:10000000}));
   app.use(morgan('combined'));
 
   const reflector = app.get(Reflector);
