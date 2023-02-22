@@ -2,7 +2,7 @@ import { Module } from "@nestjs/common";
 import { TypeOrmModule } from "@nestjs/typeorm";
 import { UserAuthEntity, UserEntity } from "../user/entities";
 import { UserAuthService, UserService } from "../user/services";
-import { MicroBiomeController } from "./controller/courses.controller";
+import { MicroBiomeController } from "./controller/microbiome.controller";
 import { MicroSampleEntity } from "./entities/registry.entity";
 import { microService } from "./services/micro.service";
 

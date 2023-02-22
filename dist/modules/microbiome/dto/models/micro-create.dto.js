@@ -19,11 +19,11 @@ __decorate([
 ], RegistryCreateDto.prototype, "username", void 0);
 __decorate([
     (0, swagger_1.ApiProperty)({ description: "User pin code" }),
-    __metadata("design:type", Uint8Array)
-], RegistryCreateDto.prototype, "image", void 0);
+    __metadata("design:type", String)
+], RegistryCreateDto.prototype, "image_route_file", void 0);
 __decorate([
     (0, swagger_1.ApiProperty)({ description: "rol user´s" }),
-    __metadata("design:type", String)
+    __metadata("design:type", Number)
 ], RegistryCreateDto.prototype, "sample_qty", void 0);
 exports.RegistryCreateDto = RegistryCreateDto;
 //# sourceMappingURL=micro-create.dto.js.map

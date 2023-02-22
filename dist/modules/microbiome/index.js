@@ -11,7 +11,7 @@ const common_1 = require("@nestjs/common");
 const typeorm_1 = require("@nestjs/typeorm");
 const entities_1 = require("../user/entities");
 const services_1 = require("../user/services");
-const courses_controller_1 = require("./controller/courses.controller");
+const microbiome_controller_1 = require("./controller/microbiome.controller");
 const registry_entity_1 = require("./entities/registry.entity");
 const micro_service_1 = require("./services/micro.service");
 let MicroBiomeModule = class MicroBiomeModule {
@@ -21,7 +21,7 @@ MicroBiomeModule = __decorate([
         imports: [
             typeorm_1.TypeOrmModule.forFeature([registry_entity_1.MicroSampleEntity, entities_1.UserEntity, entities_1.UserAuthEntity]),
         ],
-        controllers: [courses_controller_1.MicroBiomeController],
+        controllers: [microbiome_controller_1.MicroBiomeController],
         providers: [micro_service_1.microService, services_1.UserService, services_1.UserAuthService],
         exports: [],
     })

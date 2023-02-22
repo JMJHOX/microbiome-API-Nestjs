@@ -12,10 +12,10 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.MicroSampleEntity = void 0;
 const typeorm_1 = require("typeorm");
 let MicroSampleEntity = class MicroSampleEntity extends typeorm_1.BaseEntity {
-    constructor(username, image, sample_qty) {
+    constructor(username, image_route_file, sample_qty) {
         super();
         this.username = username;
-        this.image = image;
+        this.image_route_file = image_route_file;
         this.sample_qty = sample_qty;
     }
 };
@@ -28,14 +28,12 @@ __decorate([
     __metadata("design:type", String)
 ], MicroSampleEntity.prototype, "username", void 0);
 __decorate([
-    (0, typeorm_1.Column)({
-        type: 'bytea',
-    }),
-    __metadata("design:type", Uint8Array)
-], MicroSampleEntity.prototype, "image", void 0);
-__decorate([
     (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
+], MicroSampleEntity.prototype, "image_route_file", void 0);
+__decorate([
+    (0, typeorm_1.Column)({ nullable: true }),
+    __metadata("design:type", Number)
 ], MicroSampleEntity.prototype, "sample_qty", void 0);
 __decorate([
     (0, typeorm_1.CreateDateColumn)(),
@@ -47,7 +45,7 @@ __decorate([
 ], MicroSampleEntity.prototype, "updated_at", void 0);
 MicroSampleEntity = __decorate([
     (0, typeorm_1.Entity)({ name: "micro_samples" }),
-    __metadata("design:paramtypes", [String, Uint8Array, String])
+    __metadata("design:paramtypes", [String, String, Number])
 ], MicroSampleEntity);
 exports.MicroSampleEntity = MicroSampleEntity;
 //# sourceMappingURL=registry.entity.js.map

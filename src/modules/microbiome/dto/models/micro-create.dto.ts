@@ -5,8 +5,8 @@ export class RegistryCreateDto {
   readonly username: string;
 
   @ApiProperty({ description: "User pin code" })
-  readonly image?: Uint8Array;
+  readonly image_route_file?: string;
 
   @ApiProperty({ description: "rol user´s" })
-  readonly sample_qty: string;
+  readonly sample_qty: number;
 }

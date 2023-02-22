@@ -18,12 +18,13 @@ const typeorm_1 = require("@nestjs/typeorm");
 const typeorm_2 = require("typeorm");
 const registry_entity_1 = require("../entities/registry.entity");
 let microService = class microService {
-    constructor(_courseIndividualRepository) {
-        this._courseIndividualRepository = _courseIndividualRepository;
+    constructor(_microSampleRepository) {
+        this._microSampleRepository = _microSampleRepository;
     }
     async createRegistry(microRegistrationDto) {
         const createdUser = Object.assign({}, microRegistrationDto);
-        return this._courseIndividualRepository.save(createdUser);
+        console.log("payloadState:", microRegistrationDto);
+        return this._microSampleRepository.save(createdUser);
     }
 };
 microService = __decorate([

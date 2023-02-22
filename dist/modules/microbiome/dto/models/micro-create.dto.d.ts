@@ -1,5 +1,5 @@
 export declare class RegistryCreateDto {
     readonly username: string;
-    readonly image?: Uint8Array;
-    readonly sample_qty: string;
+    readonly image_route_file?: string;
+    readonly sample_qty: number;
 }

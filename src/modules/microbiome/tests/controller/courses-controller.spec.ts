@@ -11,7 +11,7 @@ import { repositoryMockFactory } from 'src/common/utils/mocks/repository-factory
 import { UserAuthEntity, UserEntity } from 'src/modules/user/entities';
 import { UserAuthService, UserService } from 'src/modules/user/services';
 import { Repository } from 'typeorm';
-import { CoursesController } from '../../controller/courses.controller';
+import { CoursesController } from '../../controller/microbiome.controller';
 import { CourseMaster } from '../../entities/course-master.entity';
 import { CourseIndividual } from '../../entities/course.entity';
 import { CourseService } from '../../services/courses.service';

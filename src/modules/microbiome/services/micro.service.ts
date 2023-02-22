@@ -8,13 +8,17 @@ import { MicroSampleEntity } from "../entities/registry.entity";
 export class microService {
   constructor(
     @InjectRepository(MicroSampleEntity)
-    private readonly _courseIndividualRepository: Repository<MicroSampleEntity>
+    private readonly _microSampleRepository: Repository<MicroSampleEntity>
   ) {}
 
   public async createRegistry(
     microRegistrationDto: RegistryCreateDto
   ): Promise<any> {
     const createdUser = { ...microRegistrationDto };
-    return this._courseIndividualRepository.save(createdUser);
+    console.log("payloadState:",microRegistrationDto)
+    return this._microSampleRepository.save(createdUser);
   }
-}
+
+
+ }
+

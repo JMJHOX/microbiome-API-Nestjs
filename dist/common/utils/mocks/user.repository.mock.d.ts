@@ -1,4 +1,3 @@
-/// <reference types="jest" />
 export declare const mockedUserRepository: {
     createQueryBuilder: jest.Mock<{
         getOne: jest.Mock<any, any>;

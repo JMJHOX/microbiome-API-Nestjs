@@ -75,4 +75,4 @@ MicroBiomeController = __decorate([
     (0, common_1.UseInterceptors)(common_1.ClassSerializerInterceptor)
 ], MicroBiomeController);
 exports.MicroBiomeController = MicroBiomeController;
-//# sourceMappingURL=courses.controller.js.map
+//# sourceMappingURL=microbiome.controller.js.map
